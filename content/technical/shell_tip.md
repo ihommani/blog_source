@@ -1,11 +1,8 @@
-Title: 
+Title: Shell tips
 Date: 2014-05-02 22:41
-Category: 
-Tags: 
-Slug: 
 Author: ihommmani
 Status: draft
-Summary: 
+Summary: Various tips 
 
 
 Sometimes i need to automate tasks through shell script. 
