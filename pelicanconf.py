@@ -53,3 +53,4 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 #To show gitHub ribbon
 GITHUB_URL = 'https://github.com/ihommani'
 
+DISQUS_SITENAME = 'ihommani'
