@@ -6,3 +6,4 @@ foundation
 output
 srv.pid
 pelican.pid
+cache
