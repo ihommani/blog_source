@@ -11,7 +11,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 # Use pelican-themes -l to list available themes
-THEME = "pelican-bootstrap3"
+THEME = "gum"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

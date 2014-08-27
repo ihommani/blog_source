@@ -50,13 +50,13 @@ That is to say, you can be a **dev evangelist**.
 
 ## Dev evangelist
 ### Who is he ?
-In November 2013 I met [Tim Fall](http://timgrid.com/, 'Tim's blog') and [Nick Quilan](http://nicholasquinlan.com/, 'Nick's blog') two dev evangelists from SendGrid.  
+In November 2013 I met [Tim Fall](http://timgrid.com/ 'Tim's blog') and [Nick Quilan](http://nicholasquinlan.com/ 'Nick's blog') two dev evangelists from SendGrid.  
 **So what is a dev evangelist ?**   
 You can raise your eyebrows when reading the word "evangelist". Why such a religious word is associated to the term of developer ?
 Obviously it's a metaphor.  
 Evangelism is the act of relying information about a particular set of beliefs to others with intention of conversion.  
 Where I come from, "evangelist" has a strong conotation. Something you will not/should not associate with a term like developer.  
-So to speak to everyone, let's consider titles such as **advocate** or **ambasador**.  
+So to speak to everyone, let's consider titles such as **technical advocate** or **technical ambasador**.  
 As a developer he/she contributes to software products but stresses on the social and community aspect.  
 Not only he codes, he is also the ambassador of an entire company.  
 - He presents products and features he directly contributed to (such as SDKs, APIs, articles...).  
@@ -91,10 +91,11 @@ But the programmer simply didn't want to be here. He presented the tool he contr
 That was dubious. On the one hand a commercial was speaking about what was being done by the programmer. On the other hand a silent guy was hardly explaining what was happening and left when everything was done.  
 Why did this association didn't perform as one can expect ? Why this lack of motivation while all the other DE were making their show ?  
 Two reasons come to my mind.  
-The first one concerns the job. It was saturday morning and the programmer was doing extra. In other word he wasn't paid.
+1. **the job**  
+It was saturday morning and the programmer was doing extra. In other word he wasn't paid.
 To make things simple every non DE didn't stay more than half a day during this two days long event.  
 On the contrary, working on non predifined shedules is part of the job of DE. He is devoted to a community, which still exists during the weekend.  
-The second reason focuses on skills.
+2. **skills**  
 DE besides being good developers and fast learners are inclined to socialize with people. Express ideas and make them simple. 
 In france we don't have jobs specially fitted to speak for developers. We usually send pure developers, but they do not necessarily fit the task although they may be very good at developping.  
 
@@ -106,15 +107,24 @@ While commercials aim at companies, decision makers and share olders, dev evange
 Looking for business oppurtunities is part of their job, but their main goal is to help people. No matter what they are working on.   
 If it concerns the API they contribute to, it's fine. If it's not, it's also fine.   
 They also represent a state of mind (and skills) of their employer. 
-Nick Fall once told me the following story. During an hackathon, one DE proposed to help a team.   
-Knowing he was working for Sendgrid they politely declined his help saying that they didn't need to send emails with their application.  
-He insisted and made it to succesfully help the team. Later, one team's member heard about sendgrid at his job. He was asked about sendgrid's products and replied this: "*I don't know anything about sendgrid but given the level of skill of their developers, I don't think their products are bad.*" 
+Nick Fall once told me the following story:   
+
+> During an hackathon, one DE proposed to help a team.   
+> Knowing he was working for Sendgrid they politely declined his help saying that they didn't need to send emails with their application.  
+> He insisted and made it to succesfully help the team. Later, one team's member heard about sendgrid at his job. 
+> He was asked about sendgrid's products and replied this: "*I don't know anything about sendgrid but given the level of skill of their developers, I don't think their products are bad.*"
+
 This tell-tale story sums up pretty well what a dev evangelist is devoted to.
+As I was intrigued by the way you become a DE, I asked Tim on how to become a dev evangelist, and I will finish with his simple answer.
+
+> "**The best way to be a dev evangelist is to be a dev evangelist.**"
 
 # Conclusion
-Am I happy to be developer ? Yes. 
+Am I happy to be developer ? Yes.  
 Altough we do not have (yet) the attractiveness of other carrers like physician or pilot, I'm conviced that things are changing for the better.  
+**Jobs like dev evangelist, to me, are the evidence of a mutation in the programming world.**   
+It proves that being a developper is far from the cliche vehiculed by medias such as movies and are real asset for companies.  
 Will I be still a developer in 10 years ? Well I don't know. I also have other passions I can dive into like movies, photos or travels.   
 But being a programmer gives me the oppurtunity to meet interesting people and think on various topics.  
 The era in which we live gives more and more place to technology.  
-This trend won't change (at least for the 15 next years) and this is good news for developers.  
+This trend won't change ([at least for the 15 next years](http://www.theguardian.com/environment/earth-insight/2014/mar/14/nasa-civilisation-irreversible-collapse-study-scientists)) and this is good news for developers.  
