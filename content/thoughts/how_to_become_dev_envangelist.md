@@ -22,7 +22,7 @@ It is a great source of inspiration and lets you **change your mind, renew your 
 All in all, it allows you to **change and adapt**, something important in such line of work.  
 Besides, you also have the satisfaction to see things you build working and having a positive impact on others.   
 ## A mutating profession
-Unfortunately for many years programmers were being seen as resources. Someone you give specifications and then able to translate the need into lines of code.  
+Unfortunately for many years programmers were being seen as resources. Someone you give specifications and then ables to translate the needs into lines of code.  
 **Denying in the process his/her ability to think and create**.  
 Lately big tech companies and movement like [software craftmanship](http://en.wikipedia.org/wiki/Software_craftsmanship, 'craftmanship') emerged. It's an important step in the recognition of developer's carreer as a prestigious one.   
 **Programmer is not a tool or a resource anymore, but someone you have to rely on**.  
@@ -58,7 +58,7 @@ Evangelism is the act of relying information about a particular set of beliefs t
 Where I come from, "evangelist" has a strong conotation. Something you will not/should not associate with a term like developer.  
 So to speak to everyone, let's consider titles such as **technical advocate** or **technical ambasador**.  
 As a developer he/she contributes to software products but stresses on the social and community aspect.  
-Not only he codes, he is also the ambassador of an entire company.  
+Not only he/she codes, he/she is also the ambassador of an entire company.  
 - He presents products and features he directly contributed to (such as SDKs, APIs, articles...).  
 - He writes articles and tutorials to help the community he is devoted to.  
 - He helps to design products and develops businesses.   
