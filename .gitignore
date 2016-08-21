@@ -7,3 +7,5 @@ output
 srv.pid
 pelican.pid
 cache
+
+.idea
