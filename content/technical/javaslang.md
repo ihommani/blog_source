@@ -245,7 +245,8 @@ void operation(Tuple2<String, int> tuple){
 
 ### Try
 In java, lambdas cannot throw checked exceptions.  
-Javaslang offers a specific data structure to wrap call to specific function.
+Javaslang offers a specific data structure to wrap lambdas that may fail in error.  
+
 
 ### Option
 In java8 we have optionals.  
@@ -254,7 +255,7 @@ In javaSlang there is only one constructor _Option.of()_. It is the only real di
 In usage we rather use the same pattern than in standard java. 
 
 ### Pattern matching
-I haven't really use this feature. the problem is it is still in developemtn, pain integration with intelliJ .
+I haven't used this feature much. It is still in development and integration with Intellij is not really that good.
 
 # Drawbacks
 ## Naming collision
@@ -270,7 +271,7 @@ Because of naming collision (List and Map for instance), working in the same cla
 When using javaSlang inside a class it has to be isolated and be exclusively used.
 That brings us to another drawback.
 
-## Coopeation with other modules
+## Cooperation with other modules
 We don't have the control on all the code we work with. Using a tierce SDK for instance.  
 Other libraries surely don't use JavaSlang.  
 That create contention points where we need to convert a Java util list into a javaSlang list for instance. Same thing for maps and stream.
