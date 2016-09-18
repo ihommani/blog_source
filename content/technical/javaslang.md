@@ -1,9 +1,9 @@
 Title: Go beyond in the functionnal paradigm with Javaslang
-Date: 2014-02-01 13:09
+Date: 2016-09-01 13:09
 Tags: java
-Slug: slug
+Slug: javaslang
 Author: ihommmani
-Summary: How Javaslang allow to go bypass the Java 8 limitations
+Summary: How Javaslang allow to bypass some of Java 8 limitations
 
 # Functional paradigm vs Object paradigm
 # Java 8 a brand new world
@@ -54,11 +54,32 @@ Once passed the wow effect of the Java 8 stream API. Here what we can complain a
 
 
 # JavaSlang goodness
+## Javaslang and the functional paradigm
+Using and learning about Javaslang showed me one important thing.  
+**Java 8 is not that functional**. It is still deeply rooted in the OO paradigm.    
+It allows to apply functionnal patterns with stream and lambda but is not striclty speaking a functional language.    
+ 
+ 
+So, what is the difference between an OO language and FP language ?
+
+>_FP imposes discipline upon assignment[...]   
+>A true functional programming language has no assignment operator. You cannot change the state of a variable._
+>Uncle Bob
+
+Yep. It's an all word that opened to my brain washed oriented object mind :)
+
+In OO we mainly expose void methods to modify the state of an object. 
+According to Javaslang's creator: 
+>_I comprehend a void return type as a smell. It is evidence that side-effects take place, state is mutated.  
+Shared mutable state is an important source of failure, not only in a concurrent setting._
+>Daniel Dietrich
+
+## How Javaslang does it ?
 JavaSlang provides new APIs and data structures to tackle those issues.  
 Unlike utilities such as Guava it is not meant to really cohabit with standard Java.  
 It replaces it where it needs to. In particular in the implementation of the Java Iterable interface.
 This approach gives Javaslang enough liberty to choose immutability over mutability.  
-And this is for the best. 
+And this gives a true functional flavour to Java. 
 
 ## Immutability
 
@@ -255,7 +276,7 @@ In javaSlang there is only one constructor _Option.of()_. It is the only real di
 In usage we rather use the same pattern than in standard java. 
 
 ### Pattern matching
-I haven't used this feature much. It is still in development and integration with Intellij is not really that good.
+I haven't used this feature much. It is still in development and integration with Intellij is not really that good.  
 
 # Drawbacks
 ## Naming collision
@@ -287,7 +308,7 @@ List.ofAll(javaList)
 ```
 Are as many potential NPE we have to be carefull on.
 
-# Should I consider Java for my code
+# Should I consider Java for my code ?
 It depends.
  
 First of all you need your project to run on Java 8.   
