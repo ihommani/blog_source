@@ -8,7 +8,7 @@ Summary: Why am I a developer and where I would like to head to
 
 # Being a software developer
 ## A passion made of interactions
-In each serious reviews there is always the same classical question.  
+In each serious developper's interview there is always the same classical question.  
 *What do you like about programming ?*  
 To be totally honest it wasn't something I have dreamed about being a kid. Nor a teenager for that matters.  
 Yet I have always been tied up with computers since my childhood. Doing things and others like hacking public computers to get access to the internet.  
