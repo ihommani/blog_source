@@ -25,8 +25,8 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           )
 
 ########PLUGINS#########
-PLUGIN_PATH = "~/Github/pelican-plugins"
-PLUGINS = ["summary", 'optimize_images']
+PLUGIN_PATHS = ['/home/ismael/Github/pythonProjects/blog/pelican-plugins']
+PLUGINS = ["summary", 'optimize_images', 'gravatar']
 
 
 # Social widget
@@ -54,3 +54,6 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 GITHUB_URL = 'https://github.com/ihommani'
 
 DISQUS_SITENAME = 'ihommani'
+
+# Gravatar information
+AUTHOR_EMAIL='ismaelhommani@gmail.com'
