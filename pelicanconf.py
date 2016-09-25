@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'ihommani'
 SITENAME = u'Thinking about...'
+SITETITLE = u'Thinking about...'
+SITESUBTITLE = u'Yet another opiniated blog'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -25,7 +27,7 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 
 ########PLUGINS#########
 PLUGIN_PATHS = ['/home/ismael/Github/pythonProjects/blog/pelican-plugins']
-PLUGINS = ["summary", 'optimize_images', 'gravatar']
+PLUGINS = ["summary", 'gravatar']
 
 
 # Social widget
@@ -54,3 +56,4 @@ GITHUB_URL = 'https://github.com/ihommani'
 
 # Gravatar information
 AUTHOR_EMAIL='ismaelhommani@gmail.com'
+GRAVATAR_SIZE=210

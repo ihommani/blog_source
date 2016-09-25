@@ -10,7 +10,6 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
 RELATIVE_URLS = False
 SITEURL = 'https://ihommani.github.io'
 
@@ -23,6 +22,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #GOOGLE_ANALYTICS = ""
 GOSQUARED_SITENAME = 'GSN-556406-R'
+PLUGINS = ["summary", 'optimize_images', 'gravatar']
 
 GITHUB_USER = 'ihommani'
 
