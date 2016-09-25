@@ -1,7 +1,7 @@
 Title: Go beyond in the functionnal paradigm with Javaslang
 Date: 2016-09-01 13:09
 Tags: java
-Slug: javaslang
+Slug: Javaslang
 Author: ihommmani
 Summary: How Javaslang allow to bypass some of Java 8 limitations
 
@@ -17,17 +17,32 @@ Thanks to the new Stream API and lambdas this was now possible.
 However, when comparing Java 8 features with the one provided by pure functional languages (Scala, Haskell)
 we still have a gap.  
 It appears that Java 8 can still progress into the functional paradigm.  
-This is where JavaSlang gets interesting. JavaSlang is a java library developed on top of Java 8 that reimplements some  
+This is where Javaslang gets interesting. Javaslang is a java library developed on top of Java 8 that reimplements some  
 of basic data structures (especially collections) to make it fit better the functional paradigm.  
 Also with the addition of new data structures, it's an all new world that opens to us. 
 
-In this article I want to give my feedback on JavaSlang's use and show how it can helps in the code expresivity.
+In this article I want to give my feedback on Javaslang's use and show how it can helps in the code expressiveness.
 
 # Requirements and Installation
-As a library build on top of Java 8, **javaslang requires a JRE 8 to work**.  
+As a library build on top of Java 8, **Javaslang requires a JRE 8 to work**.  
 Installation is fairly easy, based on the fact you use a build tool like Maven or Gradle.  
 Just add a dependency to your project. 
 Sources are available on the [github repository](https://github.com/javaslang/javaslang "javaslang").
+
+For Maven user add this to your dependency section of your pom.xml: 
+```
+<dependency>
+    <groupId>com.javaslang</groupId>
+    <artifactId>javaslang</artifactId>
+    <version>2.0.0-RC4</version>
+</dependency>
+```   
+
+Almost the same for gradel user: 
+```
+compile group: 'com.javaslang', name: 'javaslang', version: '2.0.0-RC4'
+
+```
 
 # Java 8 defects
 Once passed the wow effect of the Java 8 stream API. Here what we can complain about:
@@ -53,10 +68,10 @@ Once passed the wow effect of the Java 8 stream API. Here what we can complain a
 *   Lambdas' inability to throw checked exceptions
 
 
-# JavaSlang goodness
+# Javaslang goodness
 ## Javaslang and the functional paradigm
 Using and learning about Javaslang showed me one important thing.  
-**Java 8 is not that functional**. It is still deeply rooted in the OO paradigm.    
+**Java 8 is not that functional**. It is still deeply rooted in the **Object Oriented** (OO) paradigm.    
 It allows to apply functionnal patterns with stream and lambda but is not striclty speaking a functional language.    
  
  
@@ -75,7 +90,7 @@ Shared mutable state is an important source of failure, not only in a concurrent
 >Daniel Dietrich
 
 ## How Javaslang does it ?
-JavaSlang provides new APIs and data structures to tackle those issues.  
+Javaslang provides new APIs and data structures to tackle those issues.  
 Unlike utilities such as Guava it is not meant to really cohabit with standard Java.  
 It replaces it where it needs to. In particular in the implementation of the Java Iterable interface.
 This approach gives Javaslang enough liberty to choose immutability over mutability.  
@@ -85,20 +100,20 @@ And this gives a true functional flavour to Java.
 
 Java by default creates mutable data structures, i.e one can operate directly on a structure instance.
 ```
-list.add(3) // list has the 
+list.add(3) // We operate a side effect on the list variable by adding an element to it
 ```
 ```
-map.remove(5) // 
+map.remove(5) // We also operate a side effect. Here we remove an element from the list
 ```
-Javaslangs' data structures are [persistent](https://en.wikipedia.org/wiki/Persistent_data_structure) and therefore "effectively immutable".  
+Javaslangs's data structures are [persistent](https://en.wikipedia.org/wiki/Persistent_data_structure) and therefore "effectively immutable".  
 In short, their operations do not (visibly) update the structure in-place, but instead always yield a new updated structure.  
 Do not worry about performance issues, Javaslang share what can be shared :\) .  
 
-This example helped me to understand what it means:  
+This example helped me to understand what it means.
  
 
-In java we can create a list of three integers as follow.
 ```
+// Java 8  
 List<Integer> elements = new ArrayList<Integer>  
 elements.add(1);  
 elements.add(2);  
@@ -108,8 +123,9 @@ elements.add(3);
 ```
 The add method has no return type (void) and does perform side effect on the list element by adding new elements into it.
 
-In JavaSlang, the same example would be: 
+In Javaslang, the same example would be: 
 ```
+// Javaslang
 List<Integer> elements = List.empty();
 elements.push(3).push(2).push(3);
 ```
@@ -123,7 +139,7 @@ List<String> filledElements = elements.push(3).push(2).push(3);
 ```
 
 Strange at first, but nice !  
-This is the case for all data structures in JavaSlang.
+This is the case for all data structures in Javaslang.
 
 ## Functional data structures API
 In Java 8 we tend to separate the data collection from the operations.   
@@ -140,14 +156,17 @@ List<String> toto = List.of("hello", "world").map(operation1).map(operation2);
 **No more recollection.** 
 
 One of the pain point when working on Map with Java, is the unability to simply parcour map entries.  
-In javaSlang this is very easy as the map method accepts a bifunction.  
+In Javaslang this is very easy as the map method accepts a bifunction.  
 A rather complex operation in java such as inverting the pair key/value in a Map:
 ```
+// Java 8
 // We use a collector with two Functions<String, String>
 map.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey)); 
 ```
-Ends up in javaslang with: 
+
+
 ```
+// Javaslang
 // We use one bifunction (Function2<String, String, Tuple2<String, String>>)
 map.map((key, value) -> Tuple.of(value, key));
 ```
@@ -155,12 +174,12 @@ map.map((key, value) -> Tuple.of(value, key));
 Most functional operations on collections do not require to open a stream anymore.  
 So in most cases Stream will not be as needed as it is with standard java.   
 
-In fact, in javaSlang we use Streams for what they really are i.e a linked list of operation lazily evaluated and not what they allow to do.
+In fact, in Javaslang we use Streams for what they really are i.e a linked list of operation lazily evaluated and not what they allow to do.
 Let's precise this thought. 
 
 In java 8 the vast majority of my Stream API use cases are with collections.  
 From a collection (List or Map) I open a stream to aggregate operations and finally consume the stream by collecting the stream element.
-Like we saw, in JavaSlang, we directly do this on the List/Map object.
+Like we saw, in Javaslang, we directly do this on the List/Map object.
 So why do we need streams for ?
 
 1) **Stream are lazily evaluated**  
@@ -196,7 +215,7 @@ Beautiful, isn't it ?
  
  
 So how do I access the processed elements of a stream ? Do we need to collect or do something else ?  
-Oddly enough, there is no such thing as Collector in JavaSlang.
+Oddly enough, there is no such thing as Collector in Javaslang.
 In fact, you can directly access the element of a stream.
 ```
 // b
@@ -238,7 +257,7 @@ I highly suggest to read them all once, so you can have an idea of how you can s
 
 ##  New data structures
 
-JavaSlang is also a new set of data
+Javaslang is also a new set of datas.
 
 ### Tuple
 Something we really miss in java. A collection of elements of different types.  
@@ -249,7 +268,7 @@ So a Tuple can be seen as a class with poor expressiveness since we access its e
 through standard getters (_1, _2,...,_8) that do not say much on the underlying element.  
 
 
-What I see in tuples is a "context" factory on the fly. For instance in javaSlang, Maps are list of Tuple2 and not of 'MapEntry' objects... 
+What I see in tuples is a "context" factory on the fly. For instance in Javaslang, Maps are list of Tuple2 and not of 'MapEntry' objects... 
 It is very handy to use when chaining lambda operations, because it allow to return several outputs packaged into one Tuple.  
 
 ```
@@ -270,9 +289,9 @@ Javaslang offers a specific data structure to wrap lambdas that may fail in erro
 
 
 ### Option
-In java8 we have optionals.  
+In Java 8 we have optionals.  
 Its constructor, _Optional.of()_ throws an NPE on a null reference (not necessarily a bad thing). To handle null reference we have Optional.ofNullable().   
-In javaSlang there is only one constructor _Option.of()_. It is the only real difference I noticed with Java optional.  
+In Javaslang there is only one constructor _Option.of()_. It is the only real difference I noticed with Java optional.  
 In usage we rather use the same pattern than in standard java. 
 
 ### Pattern matching
@@ -280,33 +299,33 @@ I haven't used this feature much. It is still in development and integration wit
 
 # Drawbacks
 ## Naming collision
-JavaSlang is a layer above standard Java8 to make it more functional.  
+Javaslang is a layer above standard Java 8 to make it more functional.  
 It reimplements many structures.  
 The drawback lies in the word "reimplementation".  
 
 
 
 Where Guava is more an utility to ease the use of Standard Java and cohabites well with Java,
-JavaSlang will struggle to do so.  
-Because of naming collision (List and Map for instance), working in the same class with standard java and javaslang is cumbersome.  
-When using javaSlang inside a class it has to be isolated and be exclusively used.
+Javaslang will struggle to do so.  
+Because of naming collision (List and Map for instance), working in the same class with standard java and Javaslang is cumbersome.  
+When using Javaslang inside a class it has to be isolated and be exclusively used.
 That brings us to another drawback.
 
 ## Cooperation with other modules
 We don't have the control on all the code we work with. Using a tierce SDK for instance.  
-Other libraries surely don't use JavaSlang.  
-That create contention points where we need to convert a Java util list into a javaSlang list for instance. Same thing for maps and stream.
-Although JavaSlang provides utilities such as toJavaList, List.ofAll, this work stay tedious.
+Other libraries surely don't use Javaslang.  
+That create contention points where we need to convert a Java util list into a Javaslang list for instance. Same thing for maps and stream.
+Although Javaslang provides utilities such as toJavaList, List.ofAll, this work stay tedious.
 
 ## Watch out NullPointerExceptions
-Thes transformations are not harmless either.
+These transformations are not harmless either.
 ``` 
-javaslangList.toJavaList()
+JavaslangList.toJavaList()
 ```
 ```
 List.ofAll(javaList)
 ```
-Are as many potential NPE we have to be carefull on.
+Are as many potential NPEs we have to be careful on.
 
 # Should I consider Java for my code ?
 It depends.
@@ -322,7 +341,7 @@ This [nice article](https://blog.jooq.org/2016/08/11/all-libraries-should-follow
 
 # Conclusion
 
-JavaSlang is really worth the try. It brings java functional development to a more pragmatic level.  
+Javaslang is really worth the try. It brings java functional development to a more pragmatic level.  
 It is also glimpse of what other functional languages offer.  
-We have however seen that it comes at a price. Wether you can afford this cost or not should not
-detere you from trying it. At least to see what other functional languages offer, in comparaison to Java without having to.
+We have however seen that it comes at a price. Whether you can afford this cost or not should not
+discourage you from trying it. At least to see what other functional languages offer, in comparaison to Java without having to.
