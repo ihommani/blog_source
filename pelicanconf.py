@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 
 AUTHOR = u'ihommani'
 SITENAME = u'Thinking about...'
-SITEURL = 'ihommani.github.io'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -52,8 +51,6 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 
 #To show gitHub ribbon
 GITHUB_URL = 'https://github.com/ihommani'
-
-DISQUS_SITENAME = 'ihommani'
 
 # Gravatar information
 AUTHOR_EMAIL='ismaelhommani@gmail.com'
