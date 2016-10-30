@@ -20,10 +20,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('prendre un café', 'https://nicolas.perriault.net/'),
-          ('videlalvaro.github.com', 'http://videlalvaro.github.io'), 
-          )
+#LINKS =  (('Pelican', 'http://getpelican.com/'),
+#          ('prendre un café', 'https://nicolas.perriault.net/'),
+#          ('videlalvaro.github.com', 'http://videlalvaro.github.io'), 
+#          )
 
 ########PLUGINS#########
 PLUGIN_PATHS = ['/home/ismael/Github/pythonProjects/blog/pelican-plugins']
