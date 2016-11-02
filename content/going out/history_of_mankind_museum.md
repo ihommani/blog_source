@@ -15,7 +15,7 @@ a context that you will discover as very subjective and centrist.
 Not so long ago a museum dedicated to mankind opened in Paris.  
 Reasonably called ["Museum of mankind"](http://www.museedelhomme.fr/en) it is in fact not really new since it has existed since 1938.  
 But it was recently reopened near the [Trocadero](https://www.google.fr/maps/place/Homme+Museum/@48.861166,2.2868264,15z/data=!4m5!3m4!1s0x0:0xdeacab05dc637df!8m2!3d48.861166!4d2.2868264).  
-The museum is to invite the visitor to ask himself/herself about our identity as a specie, where do we come from and where are we heading to.  
+The museum is to invite the visitor to ask himself/herself about our identity as a species, where do we come from and where are we heading to.  
 The relation with the Sapiens book was obvious and it was with a lot of expectations I went to this museum.  
 
 Rather small, the museum is nonetheless  intelligently structured. It focuses on few points with no dispersion.  
@@ -36,9 +36,9 @@ The second part of the museum focused on our "recent" history, starting with the
 This is maybe the least interesting part of the museum.   
 I got the feeling that the museum has not enough space to finish what it has started, and to answer the last question: Where are we heading to ?  
 There is no room explaining the notion of transhumanism, our evolution through technology, the pression we apply on our environment and last but not least our extinction.
-The last word may chock but we will disappear as a specie. The relevant question is how and when.  
+The last word may chock but we will disappear as a species. The relevant question is how and when.  
 It is very likely we will be the architect of our own extinction.  
-Either by designing a new specie in our laboratories with enhanceda bodies and better cognitive faculties or more simply by transforming too much
+Either by designing a new species in our laboratories with enhanced bodies and better cognitive faculties or more simply by transforming too much
 our environment.  
 This was simply eluded.
 
