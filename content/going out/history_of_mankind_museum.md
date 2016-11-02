@@ -8,7 +8,7 @@ Summary: A place to witness our common origin
 ![interface]({filename}/images/mankind_museum.jpg "mankind museum poster")
 # Homo Sapiens
 Lately I read a book I will remember for a life time.   
-A true master piece of vulgarisation, [Sapiens from Youval Harari](https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind) opened my mind on what Homo Sapiens is as a specie.  
+A true master piece of vulgarisation, [Sapiens from Youval Harari](https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind) opened my mind on what Homo Sapiens is as a species.  
 As you may guess, I highly suggest you to read this book. It will reshape the way you see the world, and replace it in
 a context that you will discover as very subjective and centrist.  
 
